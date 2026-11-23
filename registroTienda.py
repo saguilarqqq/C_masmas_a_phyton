@@ -25,9 +25,9 @@ while producto != "FIN":
     valorFinal = totalProducto - descuento
 
     print(f"\nProducto: {producto}")
-    print(f"Valor original: ${totalProducto}")
-    print(f"Descuento: ${descuento} ")
-    print(f"Valor a pagar: ${valorFinal} ")
+    print(f"Valor original: ${totalProducto:g}")
+    print(f"Descuento: ${descuento:g} ")
+    print(f"Valor a pagar: ${valorFinal:g} ")
 
     totalCompras += totalProducto
     totalPagado += valorFinal
@@ -37,7 +37,7 @@ while producto != "FIN":
 print("\n--- RESUMEN DE LA COMPRA ---")
 print(f"Productos registrados: {productosRegistrados}")
 print(f"Productos con descuento: {productosConDescuento} ")
-print(f"Valor original de las compras: ${totalCompras}")
-print(f"Valor final a pagar: ${totalPagado}")
+print(f"Valor original de las compras: ${totalCompras:g}")
+print(f"Valor final a pagar: ${totalPagado:g}")
 
 
